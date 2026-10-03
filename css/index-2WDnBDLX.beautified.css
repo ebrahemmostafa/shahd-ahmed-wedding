@@ -4272,3 +4272,22 @@ body {
 [data-side=right] .\[\[data-side\=right\]_\&\]\:cursor-e-resize {
     cursor: e-resize
 }
+
+.hero-names {
+    font-size: 4rem;
+    line-height: 1.15;
+    color: hsl(var(--wedding-olive));
+    text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 10px hsl(var(--wedding-cream) / .95), 0 0 26px hsl(var(--wedding-cream) / .85)
+}
+
+@media (min-width: 768px) {
+    .hero-names {
+        font-size: 5.5rem
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-names {
+        font-size: 6.5rem
+    }
+}

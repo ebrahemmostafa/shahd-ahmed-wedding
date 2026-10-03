@@ -15976,7 +15976,7 @@ Error generating stack: ` + o.message + `
                         className: "text-xs md:text-sm tracking-[0.3em] uppercase mb-3 text-wedding-olive",
                         children: s.hero.gettingMarried
                     }), g.jsxs("h1", {
-                        className: "font-script text-5xl md:text-6xl lg:text-7xl mb-2 text-wedding-olive",
+                        className: "font-script mb-2 hero-names",
                         children: ["Shahd ", g.jsx("span", {
                             className: "mx-2",
                             children: "&"
@@ -15991,9 +15991,6 @@ Error generating stack: ` + o.message + `
                         }), g.jsx("span", {
                             className: "h-px w-12 md:w-20 bg-wedding-olive"
                         })]
-                    }), g.jsx("p", {
-                        className: "text-xs md:text-sm tracking-[0.2em] uppercase text-wedding-olive my-0 py-[6px]",
-                        children: s.hero.date
                     })]
                 }), g.jsx("div", {
                     className: "flex-1"
