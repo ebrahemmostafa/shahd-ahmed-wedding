@@ -15587,7 +15587,7 @@ Error generating stack: ` + o.message + `
                     thankYouDesc1: "We are so excited to know that you will be joining us on this very special day.",
                     thankYouDesc2: "Thank you for being part of our story.",
                     thankYouVenue: "We look forward to seeing you on November 22nd at Mairie du 19ème, Paris.",
-                    thankYouSignature: "Shahd & Ahmed",
+                    thankYouSignature: "Ahmed & Shahd",
                     addCalendar: "Add to calendar",
                     cantAttendNote: "If for any reason you cannot attend, we would greatly appreciate it if you let us know in advance. You can contact us via WhatsApp.",
                     declineTitle: "We'll miss you",
@@ -15780,10 +15780,10 @@ Error generating stack: ` + o.message + `
                         children: s.hero.gettingMarried
                     }), g.jsxs("h1", {
                         className: "font-script mb-2 hero-names",
-                        children: ["Shahd ", g.jsx("span", {
+                        children: ["Ahmed ", g.jsx("span", {
                             className: "mx-2",
                             children: "&"
-                        }), " Ahmed"]
+                        }), " Shahd"]
                     }), g.jsxs("div", {
                         className: "flex items-center justify-center gap-4 md:my-8 my-[5px]",
                         children: [g.jsx("span", {
@@ -27117,7 +27117,7 @@ END:VCALENDAR`,
                 className: "container mx-auto px-4 text-center",
                 children: [g.jsx("h2", {
                     className: "font-script text-4xl mb-4 text-wedding-gold",
-                    children: "Shahd & Ahmed"
+                    children: "Ahmed & Shahd"
                 }), g.jsx("p", {
                     className: "text-wedding-gold/60 mb-6",
                     children: "November 22, 2026"
@@ -27133,7 +27133,7 @@ END:VCALENDAR`,
                 }), g.jsx("div", {
                     className: "mt-8 pt-8 border-t border-wedding-gold/20 text-wedding-gold/40 text-xs",
                     children: g.jsx("p", {
-                        children: "#ShahdAndAhmed2026"
+                        children: "#AhmedAndShahd2026"
                     })
                 })]
             })
