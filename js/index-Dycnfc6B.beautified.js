@@ -15777,9 +15777,9 @@ Error generating stack: ` + o.message + `
                         muted: !0,
                         playsInline: !0,
                         preload: "auto",
-                        className: "absolute inset-0 w-full h-full object-cover"
+                        className: "absolute inset-0 w-full h-full object-cover hero-video"
                     }), g.jsx("div", {
-                        className: "absolute inset-0 bg-background/20"
+                        className: "hidden"
                     })]
                 }), g.jsxs("div", {
                     className: "hero-center",
@@ -15929,7 +15929,7 @@ Error generating stack: ` + o.message + `
                         children: "Countdown"
                     }), g.jsx("p", {
                         className: "countdown-sub",
-                        children: e > 0 ? "Until we say \u201cI do\u201d" : "Today is the day!"
+                        children: e > 0 ? "Until forever begins" : "Today is the day!"
                     }), g.jsx("div", {
                         className: "countdown-grid",
                         children: units.map(([n, v]) => g.jsxs("div", {
