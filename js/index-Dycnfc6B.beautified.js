@@ -15595,7 +15595,7 @@ Error generating stack: ` + o.message + `
                     thankYouDesc1: "We are so excited to know that you will be joining us on this very special day.",
                     thankYouDesc2: "Thank you for being part of our story.",
                     thankYouVenue: "We look forward to seeing you on November 22nd at Mairie du 19ème, Paris.",
-                    thankYouSignature: "Ahmed & Shahd",
+                    thankYouSignature: "Ahmad & Shahd",
                     addCalendar: "Add to calendar",
                     cantAttendNote: "If for any reason you cannot attend, we would greatly appreciate it if you let us know in advance. You can contact us via WhatsApp.",
                     declineTitle: "We'll miss you",
@@ -15793,7 +15793,7 @@ Error generating stack: ` + o.message + `
                         children: [g.jsx("span", {
                             className: "cap-a",
                             children: "A"
-                        }), "hmed ", g.jsx("span", {
+                        }), "hmad ", g.jsx("span", {
                             className: "mx-2",
                             children: "&"
                         }), " Shahd"]
@@ -27220,38 +27220,14 @@ END:VCALENDAR`,
                     children: [g.jsx("span", {
                         className: "cap-a",
                         children: "A"
-                    }), "hmed & Shahd"]
+                    }), "hmad & Shahd"]
                 }), g.jsx("p", {
                     className: "text-wedding-gold/60 mb-6",
                     children: "23 October 2026"
-                }), g.jsxs("div", {
-                    className: "mt-8 space-y-4",
-                    children: [g.jsx("p", {
-                        className: "text-wedding-gold/70",
-                        children: "If you’re lost don’t hesitate to contact"
-                        }), g.jsxs("p", {
-                            children: [g.jsx("a", {
-                                href: "tel:+201019727198",
-                                className: "text-lg tracking-wider text-wedding-gold underline underline-offset-4",
-                                children: "0101 972 7198"
-                            }), g.jsx("span", {
-                                className: "block text-sm text-wedding-gold/70",
-                                children: "Brother of the bride"
-                            })]
-                        }), g.jsxs("p", {
-                            children: [g.jsx("a", {
-                                href: "tel:+201019556572",
-                                className: "text-lg tracking-wider text-wedding-gold underline underline-offset-4",
-                                children: "0101 955 6572"
-                            }), g.jsx("span", {
-                                className: "block text-sm text-wedding-gold/70",
-                                children: "Brother of the groom"
-                            })]
-                        })]
                 }), g.jsx("div", {
                     className: "mt-8 pt-8 border-t border-wedding-gold/20 text-wedding-gold/40 text-xs",
                     children: [g.jsx("p", {
-                        children: "#AhmedAndShahd2026"
+                        children: "#AhmadAndShahd2026"
                     }), g.jsxs("p", {
                         className: "mt-4 text-sm text-wedding-gold/70",
                         children: ["Made with love by ", g.jsx("a", {
@@ -27373,7 +27349,34 @@ END:VCALENDAR`,
             }), r && g.jsx(TA, {
                 onContentReady: c,
                 onFadeComplete: u
-            }), g.jsx($T, {}), g.jsx(UT, {}), g.jsx(WeddingCountdown, {}), g.jsx("div", {
+            }), g.jsx($T, {}), g.jsx(UT, {}), g.jsx(WeddingCountdown, {}), g.jsx("section", {
+                className: "bg-wedding-cream contact-section px-6 text-center",
+                children: g.jsxs("div", {
+                    className: "max-w-3xl mx-auto space-y-6",
+                    children: [g.jsx("p", {
+                        className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-accent",
+                        children: "If you’re lost don’t hesitate to contact"
+                    }), g.jsxs("p", {
+                        children: [g.jsx("a", {
+                            href: "tel:+201019727198",
+                            className: "text-2xl tracking-wider text-wedding-olive underline underline-offset-4",
+                            children: "0101 972 7198"
+                        }), g.jsx("span", {
+                            className: "block text-sm text-wedding-text/70 mt-1",
+                            children: "Brother of the bride"
+                        })]
+                    }), g.jsxs("p", {
+                        children: [g.jsx("a", {
+                            href: "tel:+201019556572",
+                            className: "text-2xl tracking-wider text-wedding-olive underline underline-offset-4",
+                            children: "0101 955 6572"
+                        }), g.jsx("span", {
+                            className: "block text-sm text-wedding-text/70 mt-1",
+                            children: "Brother of the groom"
+                        })]
+                    })]
+                })
+            }), g.jsx("div", {
                 className: "bg-wedding-cream flex items-center justify-center py-2 md:py-4",
                 children: g.jsx("img", {
                     src: FT,
