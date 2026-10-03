@@ -27279,6 +27279,13 @@ END:VCALENDAR`,
         }, c = () => {
             !n && o.current && (s(!0), o.current.play())
         };
+        w.useEffect(() => {
+            const u = setTimeout(() => {
+                const h = o.current;
+                h && h.paused && !i.current && (s(!0), h.play().catch(() => {}))
+            }, 4e3);
+            return () => clearTimeout(u)
+        }, []);
         return g.jsx("div", {
             className: `fixed inset-0 z-50 cursor-pointer pointer-events-${t?"none":"auto"}`,
             style: {
