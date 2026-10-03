@@ -27215,9 +27215,18 @@ END:VCALENDAR`,
                         })]
                 }), g.jsx("div", {
                     className: "mt-8 pt-8 border-t border-wedding-gold/20 text-wedding-gold/40 text-xs",
-                    children: g.jsx("p", {
+                    children: [g.jsx("p", {
                         children: "#AhmedAndShahd2026"
-                    })
+                    }), g.jsxs("p", {
+                        className: "mt-4 text-sm text-wedding-gold/70",
+                        children: ["Made with love by ", g.jsx("a", {
+                            href: "https://ajwa2-collection.vercel.app/",
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "text-wedding-gold underline underline-offset-4",
+                            children: "Ajwaa"
+                        })]
+                    })]
                 })]
             })
         })
