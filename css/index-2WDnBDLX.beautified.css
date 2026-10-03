@@ -4301,7 +4301,8 @@ body {
 
 .hero-names {
     margin: 0;
-    font-size: 4rem;
+    font-size: clamp(2.25rem, 13vw, 4rem);
+    white-space: nowrap;
     line-height: 1.15;
     color: hsl(var(--wedding-olive));
     text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 10px hsl(var(--wedding-cream) / .95), 0 0 24px hsl(var(--wedding-cream) / .8)
