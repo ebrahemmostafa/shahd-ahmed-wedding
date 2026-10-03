@@ -15872,7 +15872,7 @@ Error generating stack: ` + o.message + `
                             })]
                         }), g.jsxs("div", {
                             children: [g.jsx("p", {
-                                className: "text-xs tracking-[0.3em] uppercase text-wedding-accent mb-2",
+                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-text mb-1",
                                 children: i.story.dateLabel
                             }), g.jsx("p", {
                                 className: "font-serif text-2xl text-wedding-olive",
@@ -15880,7 +15880,7 @@ Error generating stack: ` + o.message + `
                             })]
                         }), g.jsxs("div", {
                             children: [g.jsx("p", {
-                                className: "text-xs tracking-[0.3em] uppercase text-wedding-accent mb-2",
+                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-text mb-1",
                                 children: i.story.timeLabel
                             }), g.jsx("p", {
                                 className: "font-serif text-2xl text-wedding-olive",
@@ -15888,7 +15888,7 @@ Error generating stack: ` + o.message + `
                             })]
                         }), g.jsxs("div", {
                             children: [g.jsx("p", {
-                                className: "text-xs tracking-[0.3em] uppercase text-wedding-accent mb-2",
+                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-text mb-1",
                                 children: i.story.locationLabel
                             }), g.jsx("p", {
                                 className: "font-serif text-2xl text-wedding-olive",
