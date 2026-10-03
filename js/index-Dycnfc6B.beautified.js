@@ -15780,7 +15780,10 @@ Error generating stack: ` + o.message + `
                         children: s.hero.gettingMarried
                     }), g.jsxs("h1", {
                         className: "font-script mb-2 hero-names",
-                        children: ["Ahmed ", g.jsx("span", {
+                        children: [g.jsx("span", {
+                            className: "cap-a",
+                            children: "A"
+                        }), "hmed ", g.jsx("span", {
                             className: "mx-2",
                             children: "&"
                         }), " Shahd"]
@@ -26704,7 +26707,10 @@ END:VCALENDAR`,
                         })]
                     }), g.jsx("p", {
                         className: "text-muted-foreground font-script text-3xl md:text-4xl mt-10 opacity-0 animate-[fade-in_0.8s_ease-out_0.8s_forwards]",
-                        children: a.rsvp.thankYouSignature
+                        children: [g.jsx("span", {
+                            className: "cap-a",
+                            children: "A"
+                        }), a.rsvp.thankYouSignature.slice(1)]
                     }), f && g.jsxs("div", {
                         className: "mt-12 flex flex-col items-center gap-6 opacity-0 animate-[fade-in_0.8s_ease-out_1.1s_forwards]",
                         children: [g.jsxs(Un, {
@@ -27117,7 +27123,10 @@ END:VCALENDAR`,
                 className: "container mx-auto px-4 text-center",
                 children: [g.jsx("h2", {
                     className: "font-script text-4xl mb-4 text-wedding-gold",
-                    children: "Ahmed & Shahd"
+                    children: [g.jsx("span", {
+                        className: "cap-a",
+                        children: "A"
+                    }), "hmed & Shahd"]
                 }), g.jsx("p", {
                     className: "text-wedding-gold/60 mb-6",
                     children: "November 22, 2026"

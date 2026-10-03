@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&family=Alex+Brush&display=swap";
 
 *,
 :before,
@@ -4290,4 +4290,8 @@ body {
     .hero-names {
         font-size: 6.5rem
     }
+}
+
+.cap-a {
+    font-family: Alex Brush, Great Vibes, cursive
 }
