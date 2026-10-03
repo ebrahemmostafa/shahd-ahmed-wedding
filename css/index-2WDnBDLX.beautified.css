@@ -4304,8 +4304,7 @@ body {
     font-size: clamp(2.25rem, 13vw, 4rem);
     white-space: nowrap;
     line-height: 1.15;
-    color: hsl(var(--wedding-olive));
-    text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 10px hsl(var(--wedding-cream) / .95), 0 0 24px hsl(var(--wedding-cream) / .8)
+    color: #000
 }
 
 .hero-tag {
@@ -4319,8 +4318,7 @@ body {
     font-weight: 600;
     letter-spacing: .3em;
     text-transform: uppercase;
-    color: hsl(var(--wedding-olive));
-    text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 8px hsl(var(--wedding-cream) / .95), 0 0 16px hsl(var(--wedding-cream) / .8)
+    color: #000
 }
 
 .hero-divider {
@@ -4338,14 +4336,12 @@ body {
     display: block;
     height: 1.5px;
     width: 3rem;
-    background: hsl(var(--wedding-olive));
-    box-shadow: 0 0 6px hsl(var(--wedding-cream))
+    background: #000
 }
 
 .hero-star {
     font-size: 1.125rem;
-    color: hsl(var(--wedding-olive));
-    text-shadow: 0 0 6px hsl(var(--wedding-cream))
+    color: #000
 }
 
 @media (min-width: 768px) {
