@@ -360,25 +360,25 @@ video {
 }
 
 :root {
-    --background: 0 0% 100%;
-    --foreground: 20 14% 15%;
-    --card: 0 0% 100%;
-    --card-foreground: 20 14% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14% 15%;
-    --primary: 27 58% 59%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 140 20% 75%;
-    --secondary-foreground: 20 14% 15%;
-    --muted: 30 30% 96%;
-    --muted-foreground: 20 14% 40%;
-    --accent: 27 58% 59%;
+    --background: 30 50% 95%;
+    --foreground: 80 21% 15%;
+    --card: 30 50% 97%;
+    --card-foreground: 80 21% 15%;
+    --popover: 30 50% 97%;
+    --popover-foreground: 80 21% 15%;
+    --primary: 23 50% 47%;
+    --primary-foreground: 30 50% 97%;
+    --secondary: 53 18% 37%;
+    --secondary-foreground: 30 50% 95%;
+    --muted: 30 40% 90%;
+    --muted-foreground: 53 18% 37%;
+    --accent: 23 82% 51%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 30 20% 90%;
-    --input: 30 20% 90%;
-    --ring: 27 58% 59%;
+    --border: 30 30% 84%;
+    --input: 30 30% 84%;
+    --ring: 23 50% 47%;
     --radius: .5rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -388,14 +388,16 @@ video {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-    --wedding-cream: 47 55% 95%;
-    --wedding-paper: 30 27% 96%;
-    --wedding-blush: 350 60% 92%;
-    --wedding-sage: 140 20% 75%;
-    --wedding-accent: 27 58% 59%;
-    --wedding-text: 20 14% 15%;
-    --wedding-olive: 90 24% 24%;
-    --wedding-gold: 30 58% 77%
+    --wedding-cream: 30 50% 92%;
+    --wedding-paper: 30 50% 95%;
+    --wedding-blush: 346 47% 33%;
+    --wedding-sage: 53 18% 37%;
+    --wedding-accent: 23 50% 47%;
+    --wedding-text: 346 47% 33%;
+    --wedding-olive: 80 21% 27%;
+    --wedding-gold: 30 50% 92%;
+    --wedding-orange: 23 82% 51%;
+    --wedding-wine: 346 47% 33%
 }
 
 .dark {
@@ -405,19 +407,19 @@ video {
     --card-foreground: 0 0% 98%;
     --popover: 20 14% 12%;
     --popover-foreground: 0 0% 98%;
-    --primary: 27 58% 59%;
+    --primary: 23 50% 47%;
     --primary-foreground: 0 0% 100%;
     --secondary: 140 20% 30%;
     --secondary-foreground: 0 0% 98%;
     --muted: 20 14% 20%;
     --muted-foreground: 0 0% 70%;
-    --accent: 27 58% 59%;
+    --accent: 23 50% 47%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
     --border: 20 14% 25%;
     --input: 20 14% 25%;
-    --ring: 27 58% 59%;
+    --ring: 23 50% 47%;
     --sidebar-background: 20 14% 8%;
     --sidebar-foreground: 0 0% 85%;
     --sidebar-primary: 0 0% 98%;
@@ -425,15 +427,17 @@ video {
     --sidebar-accent: 20 14% 15%;
     --sidebar-accent-foreground: 0 0% 98%;
     --sidebar-border: 20 14% 20%;
-    --sidebar-ring: 27 58% 59%;
+    --sidebar-ring: 23 50% 47%;
     --wedding-cream: 47 20% 15%;
     --wedding-paper: 80 10% 12%;
     --wedding-blush: 350 40% 20%;
     --wedding-sage: 140 15% 30%;
-    --wedding-accent: 27 58% 59%;
+    --wedding-accent: 23 50% 47%;
     --wedding-text: 0 0% 95%;
-    --wedding-olive: 90 24% 24%;
-    --wedding-gold: 30 58% 77%
+    --wedding-olive: 80 21% 27%;
+    --wedding-gold: 30 58% 77%;
+    --wedding-orange: 23 82% 51%;
+    --wedding-wine: 346 47% 33%
 }
 
 * {
@@ -1692,11 +1696,11 @@ body {
 }
 
 .bg-\[\#d28f5b\]\/\[0\.29\] {
-    background-color: #d28f5b4a
+    background-color: #b66a3c4a
 }
 
 .bg-\[\#faf4eb\]\/\[0\.76\] {
-    background-color: #faf4ebc2
+    background-color: #f5ebe1c2
 }
 
 .bg-\[--color-bg\] {
@@ -1822,6 +1826,14 @@ body {
 
 .fill-wedding-accent {
     fill: hsl(var(--wedding-accent))
+}
+
+.fill-wedding-orange {
+    fill: hsl(var(--wedding-orange))
+}
+
+.text-wedding-orange {
+    color: hsl(var(--wedding-orange))
 }
 
 .fill-wedding-gold {
@@ -2982,7 +2994,7 @@ body {
 }
 
 .group:hover .group-hover\:bg-wedding-accent {
-    background-color: hsl(var(--wedding-accent))
+    background-color: hsl(var(--wedding-orange))
 }
 
 .group\/menu-item:hover .group-hover\/menu-item\:opacity-100,

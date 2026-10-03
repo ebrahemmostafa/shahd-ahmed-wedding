@@ -16642,7 +16642,7 @@ const VT = () => {
                 origin: {
                     y: .6
                 },
-                colors: ["#e57373", "#f4a460", "#64b5f6", "#ffd54f", "#81c784", "#ba68c8"]
+                colors: ["#B66A3C", "#E96A1C", "#7B2C3E", "#706C4E", "#4B5537", "#F5EBE1"]
             })
         }, i = () => {
             e || o(), t(!e)
@@ -16650,7 +16650,7 @@ const VT = () => {
         return g.jsx("section", {
             className: "md:py-24 relative overflow-hidden py-[10px]",
             style: {
-                backgroundColor: "#FAF5EB"
+                backgroundColor: "#F5EBE1"
             },
             children: g.jsxs("div", {
                 className: "max-w-2xl mx-auto px-4 relative z-10",
@@ -27408,7 +27408,7 @@ END:VCALENDAR`,
                     children: [g.jsx("span", {
                         children: e.footer.madeWith
                     }), g.jsx(vn, {
-                        className: "w-4 h-4 text-wedding-gold fill-wedding-gold"
+                        className: "w-4 h-4 text-wedding-orange fill-wedding-orange"
                     }), g.jsx("span", {
                         children: e.footer.forOurDay
                     })]
@@ -27454,7 +27454,7 @@ END:VCALENDAR`,
         return g.jsx("div", {
             className: `fixed inset-0 z-50 cursor-pointer pointer-events-${t?"none":"auto"}`,
             style: {
-                backgroundColor: "#f6f4f2",
+                backgroundColor: "#F5EBE1",
                 transition: "opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1)",
                 opacity: t ? 0 : 1
             },
