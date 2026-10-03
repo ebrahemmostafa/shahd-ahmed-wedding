@@ -15521,26 +15521,8 @@ Error generating stack: ` + o.message + `
                     confirmAttendance: "Confirm Attendance"
                 },
                 story: {
-                    subtitle: "Our Journey",
-                    title: "Our Love Story",
-                    milestones: [{
-                        year: "2020",
-                        title: "How We Met",
-                        description: "Our paths crossed in the most unexpected way. What started as a chance encounter became the beginning of our beautiful journey together."
-                    }, {
-                        year: "2021",
-                        title: "First Adventure",
-                        description: "We discovered our shared love for exploration and adventure. From late-night conversations to spontaneous trips, every moment brought us closer."
-                    }, {
-                        year: "2023",
-                        title: "Moving Forward",
-                        description: "We knew this was forever. Building our life together, supporting each other's dreams, and growing stronger with each passing day."
-                    }, {
-                        year: "2025",
-                        title: "The Proposal",
-                        description: "With a heart full of love and dreams for our future, the question was asked and answered with tears of joy."
-                    }],
-                    photo: "Photo"
+                    line1: "Two families, two stories, one beginning.",
+                    line2: "We would be so happy to have you with us"
                 },
                 program: {
                     title: "Day Program",
@@ -15849,102 +15831,20 @@ Error generating stack: ` + o.message + `
         },
         FT = "assets/images/fountain-divider-D0BcDnvR.png",
         UT = () => {
-            const [e, t] = w.useState(new Set), r = w.useRef([]), n = w.useRef(null), [s, o] = w.useState(!1), {
+            const {
                 t: i
-            } = Mr(), a = i.story.milestones;
-            return w.useEffect(() => {
-                const l = new IntersectionObserver(u => {
-                        u.forEach(h => {
-                            if (h.isIntersecting) {
-                                const p = r.current.indexOf(h.target);
-                                p !== -1 && t(d => new Set([...d, p]))
-                            }
-                        })
-                    }, {
-                        threshold: .3
-                    }),
-                    c = new IntersectionObserver(u => {
-                        u.forEach(h => {
-                            h.isIntersecting && o(!0)
-                        })
-                    }, {
-                        threshold: .5
-                    });
-                return r.current.forEach(u => {
-                    u && l.observe(u)
-                }), n.current && c.observe(n.current), () => {
-                    l.disconnect(), c.disconnect()
-                }
-            }, []), g.jsx("section", {
+            } = Mr();
+            return g.jsx("section", {
                 id: "story",
-                className: "md:py-32 bg-wedding-cream py-0",
+                className: "py-20 md:py-32 bg-wedding-cream",
                 children: g.jsxs("div", {
-                    className: "container mx-auto px-4 max-w-4xl bg-[#faf4eb]/[0.76]",
-                    children: [g.jsxs("div", {
-                        className: "text-center mb-16",
-                        children: [g.jsx("p", {
-                            className: "font-script text-wedding-accent text-2xl mb-4 py-[20px]",
-                            children: i.story.subtitle
-                        }), g.jsx("h2", {
-                            className: "font-script text-5xl md:text-6xl text-wedding-olive mb-6",
-                            children: i.story.title
-                        }), g.jsxs("div", {
-                            className: "flex items-center justify-center gap-4",
-                            children: [g.jsx("div", {
-                                className: "h-px w-16 bg-wedding-accent/30"
-                            }), g.jsx(vn, {
-                                className: "w-5 h-5 text-wedding-accent"
-                            }), g.jsx("div", {
-                                className: "h-px w-16 bg-wedding-accent/30"
-                            })]
-                        })]
-                    }), g.jsxs("div", {
-                        className: "relative pb-12 py-px my-px",
-                        children: [g.jsx("div", {
-                            className: "absolute left-4 md:left-1/2 top-0 bottom-2.5 w-px bg-wedding-accent/20 transform md:-translate-x-1/2"
-                        }), g.jsx("div", {
-                            className: "space-y-12",
-                            children: a.map((l, c) => g.jsxs("div", {
-                                ref: u => r.current[c] = u,
-                                className: `relative flex items-start gap-8 transition-all duration-700 ease-out ${c%2===0?"md:flex-row":"md:flex-row-reverse"} ${e.has(c)?"opacity-100 translate-y-0":"opacity-0 translate-y-8"}`,
-                                style: {
-                                    transitionDelay: `${c*100}ms`
-                                },
-                                children: [g.jsxs("div", {
-                                    className: `flex-1 ml-12 md:ml-0 ${c%2===0?"md:text-right md:pr-12":"md:pl-12"}`,
-                                    children: [g.jsx("span", {
-                                        className: "font-script text-wedding-accent text-3xl",
-                                        children: l.year
-                                    }), g.jsx("h3", {
-                                        className: "font-script text-3xl text-wedding-text mt-2 mb-3",
-                                        children: l.title
-                                    }), g.jsx("p", {
-                                        className: "font-serif italic text-wedding-text/70 leading-relaxed text-lg",
-                                        children: l.description
-                                    })]
-                                }), g.jsx("div", {
-                                    className: `absolute left-4 md:left-1/2 w-3 h-3 bg-wedding-accent rounded-full transform -translate-x-1/2 mt-2 transition-all duration-500 ${e.has(c)?"scale-100":"scale-0"}`,
-                                    style: {
-                                        transitionDelay: `${c*100+200}ms`
-                                    }
-                                }), g.jsx("div", {
-                                    className: "hidden md:block flex-1"
-                                })]
-                            }, l.year))
-                        }), g.jsx("div", {
-                            ref: n,
-                            className: `absolute left-[16px] md:left-1/2 bottom-0 transform -translate-x-1/2 transition-all duration-700 ${s?"opacity-100 scale-100":"opacity-0 scale-0"}`,
-                            children: g.jsx(vn, {
-                                className: "w-5 h-5 text-wedding-accent fill-wedding-accent animate-[pulse_2s_ease-in-out_infinite]"
-                            })
-                        })]
-                    }), g.jsx("div", {
-                        className: "mt-16 flex justify-center",
-                        children: g.jsx("img", {
-                            alt: "Wedding doves",
-                            className: "w-80 md:w-[400px] lg:w-[500px] h-auto",
-                            src: "/assets/images/lovable-uploads-0d82b9fc.png"
-                        })
+                    className: "container mx-auto px-6 max-w-3xl text-center animate-fade-in",
+                    children: [g.jsx("p", {
+                        className: "font-script text-4xl md:text-5xl text-wedding-olive mb-6",
+                        children: i.story.line1
+                    }), g.jsx("p", {
+                        className: "font-serif italic text-xl md:text-2xl text-wedding-text/70 leading-relaxed",
+                        children: i.story.line2
                     })]
                 })
             })
