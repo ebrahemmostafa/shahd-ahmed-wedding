@@ -15857,7 +15857,7 @@ Error generating stack: ` + o.message + `
                         className: "font-script text-4xl md:text-5xl text-wedding-olive mb-6",
                         children: i.story.line1
                     }), g.jsx("p", {
-                        className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-text leading-relaxed",
+                        className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-accent leading-relaxed",
                         children: i.story.line2
                     }), g.jsxs("div", {
                         className: "mt-12 space-y-6",
@@ -15872,7 +15872,7 @@ Error generating stack: ` + o.message + `
                             })]
                         }), g.jsxs("div", {
                             children: [g.jsx("p", {
-                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-text mb-1",
+                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-accent mb-1",
                                 children: i.story.dateLabel
                             }), g.jsx("p", {
                                 className: "font-serif text-2xl text-wedding-olive",
@@ -15880,7 +15880,7 @@ Error generating stack: ` + o.message + `
                             })]
                         }), g.jsxs("div", {
                             children: [g.jsx("p", {
-                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-text mb-1",
+                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-accent mb-1",
                                 children: i.story.timeLabel
                             }), g.jsx("p", {
                                 className: "font-serif text-2xl text-wedding-olive",
@@ -15888,7 +15888,7 @@ Error generating stack: ` + o.message + `
                             })]
                         }), g.jsxs("div", {
                             children: [g.jsx("p", {
-                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-text mb-1",
+                                className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-accent mb-1",
                                 children: i.story.locationLabel
                             }), g.jsx("p", {
                                 className: "font-serif text-2xl text-wedding-olive",
