@@ -15536,31 +15536,31 @@ Error generating stack: ` + o.message + `
                     title: "Day Program",
                     subtitle: "What we have prepared for you",
                     events: [{
-                        time: "4:30 PM",
+                        time: "5:30 PM",
                         title: "Guest Arrival",
                         description: "Welcome and reception"
                     }, {
-                        time: "5:00 PM",
+                        time: "6:00 PM",
                         title: "Ceremony",
                         description: "Civil wedding"
                     }, {
-                        time: "6:00 PM",
+                        time: "7:00 PM",
                         title: "Cocktail",
                         description: "Aperitifs and drinks"
                     }, {
-                        time: "8:00 PM",
+                        time: "9:00 PM",
                         title: "Dinner",
                         description: "Wedding banquet"
                     }, {
-                        time: "10:30 PM",
+                        time: "11:30 PM",
                         title: "First Dance",
                         description: "The newlyweds' dance"
                     }, {
-                        time: "11:00 PM",
+                        time: "12:00 AM",
                         title: "Party",
                         description: "Let's dance!"
                     }, {
-                        time: "2:30 AM",
+                        time: "3:30 AM",
                         title: "End",
                         description: "Goodbye"
                     }]
