@@ -15522,7 +15522,15 @@ Error generating stack: ` + o.message + `
                 },
                 story: {
                     line1: "Two families, two stories, one beginning.",
-                    line2: "We would be so happy to have you with us"
+                    line2: "We would be so happy to have you with us",
+                    dateLabel: "Date",
+                    date: "Friday, 23 October 2026",
+                    timeLabel: "Time",
+                    time: "5:00 PM",
+                    locationLabel: "Location",
+                    location: "The Grove, El Sherouk",
+                    mapUrl: "https://maps.app.goo.gl/apBpcmYAHKW3Y1vD6",
+                    openMap: "Open in Maps"
                 },
                 program: {
                     title: "Day Program",
@@ -15848,6 +15856,48 @@ Error generating stack: ` + o.message + `
                     }), g.jsx("p", {
                         className: "font-serif italic text-xl md:text-2xl text-wedding-text/70 leading-relaxed",
                         children: i.story.line2
+                    }), g.jsxs("div", {
+                        className: "mt-12 space-y-6",
+                        children: [g.jsxs("div", {
+                            className: "flex items-center justify-center gap-4 mb-12",
+                            children: [g.jsx("div", {
+                                className: "h-px w-16 bg-wedding-accent/30"
+                            }), g.jsx("div", {
+                                className: "w-2 h-2 bg-wedding-accent rounded-full"
+                            }), g.jsx("div", {
+                                className: "h-px w-16 bg-wedding-accent/30"
+                            })]
+                        }), g.jsxs("div", {
+                            children: [g.jsx("p", {
+                                className: "text-xs tracking-[0.3em] uppercase text-wedding-accent mb-2",
+                                children: i.story.dateLabel
+                            }), g.jsx("p", {
+                                className: "font-serif text-2xl text-wedding-olive",
+                                children: i.story.date
+                            })]
+                        }), g.jsxs("div", {
+                            children: [g.jsx("p", {
+                                className: "text-xs tracking-[0.3em] uppercase text-wedding-accent mb-2",
+                                children: i.story.timeLabel
+                            }), g.jsx("p", {
+                                className: "font-serif text-2xl text-wedding-olive",
+                                children: i.story.time
+                            })]
+                        }), g.jsxs("div", {
+                            children: [g.jsx("p", {
+                                className: "text-xs tracking-[0.3em] uppercase text-wedding-accent mb-2",
+                                children: i.story.locationLabel
+                            }), g.jsx("p", {
+                                className: "font-serif text-2xl text-wedding-olive",
+                                children: i.story.location
+                            })]
+                        }), g.jsx("a", {
+                            href: i.story.mapUrl,
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                            className: "inline-flex items-center gap-2 mt-2 px-6 py-2 rounded-full border border-wedding-olive/40 text-wedding-olive text-sm tracking-wider hover:bg-wedding-olive hover:text-white transition-colors",
+                            children: i.story.openMap
+                        })]
                     })]
                 })
             })
