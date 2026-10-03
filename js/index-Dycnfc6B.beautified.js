@@ -27181,15 +27181,6 @@ END:VCALENDAR`,
                     className: "text-wedding-gold/60 mb-6",
                     children: "23 October 2026"
                 }), g.jsxs("div", {
-                    className: "flex items-center justify-center gap-2 text-wedding-gold/60 text-sm",
-                    children: [g.jsx("span", {
-                        children: e.footer.madeWith
-                    }), g.jsx(vn, {
-                        className: "w-4 h-4 text-wedding-orange fill-wedding-orange"
-                    }), g.jsx("span", {
-                        children: e.footer.forOurDay
-                    })]
-                }), g.jsxs("div", {
                     className: "mt-8 space-y-4",
                     children: [g.jsx("p", {
                         className: "text-wedding-gold/70",
