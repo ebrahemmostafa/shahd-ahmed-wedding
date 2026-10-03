@@ -15740,7 +15740,7 @@ Error generating stack: ` + o.message + `
                         }
                     }
                 };
-                return window.addEventListener("pointerdown", a), window.addEventListener("touchstart", a), window.addEventListener("keydown", a), () => {
+                return a(), window.addEventListener("pointerdown", a), window.addEventListener("touchstart", a), window.addEventListener("keydown", a), () => {
                     window.removeEventListener("pointerdown", a), window.removeEventListener("touchstart", a), window.removeEventListener("keydown", a)
                 }
             }, [e]), w.useEffect(() => {
