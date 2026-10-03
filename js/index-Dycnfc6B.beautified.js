@@ -16002,11 +16002,7 @@ Error generating stack: ` + o.message + `
                     style: {
                         animationDelay: "0.4s"
                     },
-                    children: [g.jsx("button", {
-                        onClick: () => i("rsvp"),
-                        className: "text-xs tracking-[0.3em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300",
-                        children: s.hero.confirmAttendance
-                    }), g.jsx("div", {
+                    children: [g.jsx("div", {
                         className: "mt-4 flex justify-center",
                         children: g.jsx("svg", {
                             className: "w-4 h-4 text-muted-foreground animate-bounce",
