@@ -15816,7 +15816,10 @@ Error generating stack: ` + o.message + `
                     style: {
                         animationDelay: "0.4s"
                     },
-                    children: [g.jsx("div", {
+                    children: [g.jsx("p", {
+                        className: "hero-scroll",
+                        children: "Scroll down"
+                    }), g.jsx("div", {
                         className: "mt-4 flex justify-center",
                         children: g.jsx("svg", {
                             className: "w-4 h-4 text-muted-foreground animate-bounce",
@@ -27279,11 +27282,9 @@ END:VCALENDAR`,
         }, c = () => {
             !n && o.current && (s(!0), o.current.play())
         };
+        const [hint, setHint] = w.useState(!1);
         w.useEffect(() => {
-            const u = setTimeout(() => {
-                const h = o.current;
-                h && h.paused && !i.current && (s(!0), h.play().catch(() => {}))
-            }, 4e3);
+            const u = setTimeout(() => setHint(!0), 3e3);
             return () => clearTimeout(u)
         }, []);
         return g.jsx("div", {
@@ -27294,7 +27295,7 @@ END:VCALENDAR`,
                 opacity: t ? 0 : 1
             },
             onClick: c,
-            children: g.jsx("video", {
+            children: [g.jsx("video", {
                 ref: o,
                 src: "assets/videos/intro-video.mp4#t=0.1",
                 className: "w-full h-full object-cover",
@@ -27313,7 +27314,10 @@ END:VCALENDAR`,
                 },
                 onTimeUpdate: l,
                 onEnded: a
-            })
+            }), g.jsx("p", {
+                className: `intro-hint ${hint&&!n?"intro-hint-show":""}`,
+                children: "Click to open"
+            })]
         })
     },
     TA = ({

@@ -4439,3 +4439,43 @@ body {
         font-size: .8rem
     }
 }
+
+.intro-hint {
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    margin: 0;
+    white-space: nowrap;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: #F5EBE1;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, .45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .8s ease
+}
+
+.intro-hint-show {
+    opacity: 1;
+    animation: intro-hint-pulse 2s ease-in-out .8s infinite
+}
+
+@keyframes intro-hint-pulse {
+    0%, 100% {
+        opacity: 1
+    }
+    50% {
+        opacity: .45
+    }
+}
+
+.hero-scroll {
+    margin: 0;
+    font-size: .7rem;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: #000
+}
