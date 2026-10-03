@@ -15761,7 +15761,7 @@ Error generating stack: ` + o.message + `
                 })
             };
             return g.jsxs("section", {
-                className: "relative min-h-screen flex flex-col items-center justify-center py-8 px-6 overflow-hidden bg-background",
+                className: "relative min-h-screen hero-section flex flex-col items-center justify-center py-8 px-6 overflow-hidden bg-background",
                 children: [g.jsx("audio", {
                     ref: r,
                     src: "assets/videos/background-music.mp3",
@@ -15782,9 +15782,11 @@ Error generating stack: ` + o.message + `
                         className: "absolute inset-0 bg-background/20"
                     })]
                 }), g.jsxs("div", {
-                    className: "text-center z-10 animate-fade-in my-[230px]",
-                    children: [g.jsx("p", {
-                        className: "text-xs md:text-sm tracking-[0.3em] uppercase mb-3 text-wedding-olive",
+                    className: "hero-center",
+                    children: g.jsxs("div", {
+                        className: "hero-inner animate-fade-in",
+                        children: [g.jsx("p", {
+                        className: "hero-tag",
                         children: s.hero.gettingMarried
                     }), g.jsxs("h1", {
                         className: "font-script mb-2 hero-names",
@@ -15796,16 +15798,17 @@ Error generating stack: ` + o.message + `
                             children: "&"
                         }), " Shahd"]
                     }), g.jsxs("div", {
-                        className: "flex items-center justify-center gap-4 md:my-8 my-[5px]",
+                        className: "hero-divider",
                         children: [g.jsx("span", {
-                            className: "h-px w-12 md:w-20 bg-wedding-olive"
+                            className: "hero-line"
                         }), g.jsx("span", {
-                            className: "text-amber-500 text-lg drop-shadow-md",
+                            className: "hero-star",
                             children: "✦"
                         }), g.jsx("span", {
-                            className: "h-px w-12 md:w-20 bg-wedding-olive"
+                            className: "hero-line"
                         })]
                     })]
+                    })
                 }), g.jsx("div", {
                     className: "flex-1"
                 }), g.jsxs("div", {
@@ -15854,7 +15857,7 @@ Error generating stack: ` + o.message + `
                         className: "font-script text-4xl md:text-5xl text-wedding-olive mb-6",
                         children: i.story.line1
                     }), g.jsx("p", {
-                        className: "font-serif italic text-xl md:text-2xl text-wedding-text/70 leading-relaxed",
+                        className: "font-serif italic font-semibold text-xl md:text-2xl text-wedding-text leading-relaxed",
                         children: i.story.line2
                     }), g.jsxs("div", {
                         className: "mt-12 space-y-6",
@@ -15898,6 +15901,47 @@ Error generating stack: ` + o.message + `
                             className: "inline-flex items-center gap-2 mt-2 px-6 py-2 rounded-full border border-wedding-olive/40 text-wedding-olive text-sm tracking-wider hover:bg-wedding-olive hover:text-white transition-colors",
                             children: i.story.openMap
                         })]
+                    })]
+                })
+            })
+        },
+        WeddingCountdown = () => {
+            const target = new Date("2026-10-23T17:00:00+03:00").getTime(),
+                calc = () => Math.max(0, target - Date.now()),
+                [e, t] = w.useState(calc);
+            w.useEffect(() => {
+                const r = setInterval(() => t(calc()), 1e3);
+                return () => clearInterval(r)
+            }, []);
+            const units = [
+                ["Days", Math.floor(e / 864e5)],
+                ["Hours", Math.floor(e / 36e5) % 24],
+                ["Minutes", Math.floor(e / 6e4) % 60],
+                ["Seconds", Math.floor(e / 1e3) % 60]
+            ];
+            return g.jsx("section", {
+                id: "countdown",
+                className: "countdown-section",
+                children: g.jsxs("div", {
+                    className: "countdown-wrap",
+                    children: [g.jsx("h2", {
+                        className: "font-script countdown-title",
+                        children: "Countdown"
+                    }), g.jsx("p", {
+                        className: "countdown-sub",
+                        children: e > 0 ? "Until we say \u201cI do\u201d" : "Today is the day!"
+                    }), g.jsx("div", {
+                        className: "countdown-grid",
+                        children: units.map(([n, v]) => g.jsxs("div", {
+                            className: "countdown-box",
+                            children: [g.jsx("span", {
+                                className: "countdown-num",
+                                children: String(v).padStart(2, "0")
+                            }), g.jsx("span", {
+                                className: "countdown-label",
+                                children: n
+                            })]
+                        }, n))
                     })]
                 })
             })
@@ -27329,7 +27373,7 @@ END:VCALENDAR`,
             }), r && g.jsx(TA, {
                 onContentReady: c,
                 onFadeComplete: u
-            }), g.jsx($T, {}), g.jsx(UT, {}), g.jsx(BT, {}), g.jsx("div", {
+            }), g.jsx($T, {}), g.jsx(UT, {}), g.jsx(WeddingCountdown, {}), g.jsx("div", {
                 className: "bg-wedding-cream flex items-center justify-center py-2 md:py-4",
                 children: g.jsx("img", {
                     src: FT,

@@ -1,4 +1,4 @@
-@import"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&family=Alex+Brush&display=swap";
+@import"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&family=Alex+Brush&display=swap";
 
 *,
 :before,
@@ -4273,16 +4273,89 @@ body {
     cursor: e-resize
 }
 
+
+.cap-a {
+    font-family: Alex Brush, Great Vibes, cursive
+}
+
+.hero-section {
+    min-height: 100vh;
+    min-height: 100svh
+}
+
+.hero-center {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5rem;
+    text-align: center;
+    pointer-events: none
+}
+
+.hero-inner {
+    position: relative
+}
+
 .hero-names {
+    margin: 0;
     font-size: 4rem;
     line-height: 1.15;
-    color: hsl(var(--wedding-olive));
-    text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 10px hsl(var(--wedding-cream) / .95), 0 0 26px hsl(var(--wedding-cream) / .85)
+    color: #111;
+    text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 10px hsl(var(--wedding-cream) / .95), 0 0 24px hsl(var(--wedding-cream) / .8)
+}
+
+.hero-tag {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: .75rem;
+    white-space: nowrap;
+    font-size: .875rem;
+    font-weight: 600;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: #111;
+    text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 8px hsl(var(--wedding-cream) / .95), 0 0 16px hsl(var(--wedding-cream) / .8)
+}
+
+.hero-divider {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.hero-line {
+    display: block;
+    height: 1.5px;
+    width: 3rem;
+    background: #111;
+    box-shadow: 0 0 6px hsl(var(--wedding-cream))
+}
+
+.hero-star {
+    font-size: 1.125rem;
+    color: #111;
+    text-shadow: 0 0 6px hsl(var(--wedding-cream))
 }
 
 @media (min-width: 768px) {
     .hero-names {
         font-size: 5.5rem
+    }
+    .hero-tag {
+        font-size: 1rem
+    }
+    .hero-line {
+        width: 5rem
     }
 }
 
@@ -4292,6 +4365,80 @@ body {
     }
 }
 
-.cap-a {
-    font-family: Alex Brush, Great Vibes, cursive
+.countdown-section {
+    background: hsl(var(--wedding-olive));
+    padding: 4rem 1rem
+}
+
+.countdown-wrap {
+    max-width: 48rem;
+    margin: 0 auto;
+    text-align: center
+}
+
+.countdown-title {
+    font-size: 3rem;
+    line-height: 1.1;
+    color: hsl(var(--wedding-gold));
+    margin-bottom: .5rem
+}
+
+.countdown-sub {
+    color: hsl(var(--wedding-gold) / .75);
+    letter-spacing: .05em;
+    margin-bottom: 2.5rem
+}
+
+.countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .75rem
+}
+
+.countdown-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .35rem;
+    padding: 1rem .25rem;
+    border: 1px solid hsl(var(--wedding-gold) / .3);
+    border-radius: 1rem;
+    background: hsl(var(--wedding-gold) / .06)
+}
+
+.countdown-num {
+    font-family: Cormorant Garamond, serif;
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1;
+    color: hsl(var(--wedding-gold));
+    font-variant-numeric: tabular-nums
+}
+
+.countdown-label {
+    font-size: .65rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: hsl(var(--wedding-gold) / .7)
+}
+
+@media (min-width: 768px) {
+    .countdown-section {
+        padding: 6rem 1rem
+    }
+    .countdown-title {
+        font-size: 3.75rem
+    }
+    .countdown-grid {
+        gap: 1.5rem
+    }
+    .countdown-box {
+        padding: 1.75rem .5rem
+    }
+    .countdown-num {
+        font-size: 3.5rem
+    }
+    .countdown-label {
+        font-size: .8rem
+    }
 }
