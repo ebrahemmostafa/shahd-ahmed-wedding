@@ -27179,7 +27179,7 @@ END:VCALENDAR`,
                     }), "hmed & Shahd"]
                 }), g.jsx("p", {
                     className: "text-wedding-gold/60 mb-6",
-                    children: "November 22, 2026"
+                    children: "23 October 2026"
                 }), g.jsxs("div", {
                     className: "flex items-center justify-center gap-2 text-wedding-gold/60 text-sm",
                     children: [g.jsx("span", {
