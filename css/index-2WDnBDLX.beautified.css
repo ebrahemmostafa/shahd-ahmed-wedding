@@ -4303,7 +4303,7 @@ body {
     margin: 0;
     font-size: 4rem;
     line-height: 1.15;
-    color: #111;
+    color: hsl(var(--wedding-olive));
     text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 10px hsl(var(--wedding-cream) / .95), 0 0 24px hsl(var(--wedding-cream) / .8)
 }
 
@@ -4318,7 +4318,7 @@ body {
     font-weight: 600;
     letter-spacing: .3em;
     text-transform: uppercase;
-    color: #111;
+    color: hsl(var(--wedding-olive));
     text-shadow: 0 0 2px hsl(var(--wedding-cream)), 0 0 8px hsl(var(--wedding-cream) / .95), 0 0 16px hsl(var(--wedding-cream) / .8)
 }
 
@@ -4337,13 +4337,13 @@ body {
     display: block;
     height: 1.5px;
     width: 3rem;
-    background: #111;
+    background: hsl(var(--wedding-olive));
     box-shadow: 0 0 6px hsl(var(--wedding-cream))
 }
 
 .hero-star {
     font-size: 1.125rem;
-    color: #111;
+    color: hsl(var(--wedding-olive));
     text-shadow: 0 0 6px hsl(var(--wedding-cream))
 }
 
