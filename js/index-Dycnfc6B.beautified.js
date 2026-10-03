@@ -27305,18 +27305,14 @@ END:VCALENDAR`,
             }), r && g.jsx(TA, {
                 onContentReady: c,
                 onFadeComplete: u
-            }), g.jsx($T, {}), g.jsx(UT, {}), g.jsx(BT, {}), g.jsx(VT, {}), g.jsx(HT, {}), g.jsx(_A, {
-                submitted: s,
-                attendance: i,
-                onSubmitted: l
-            }), g.jsx("div", {
+            }), g.jsx($T, {}), g.jsx(UT, {}), g.jsx(BT, {}), g.jsx("div", {
                 className: "bg-wedding-cream flex items-center justify-center py-2 md:py-4",
                 children: g.jsx("img", {
                     src: FT,
                     alt: "Decorative fountain",
                     className: "max-w-[280px] md:max-w-[400px] w-full h-auto"
                 })
-            }), g.jsx(SA, {}), g.jsx(EA, {})]
+            }), g.jsx(EA, {})]
         })
     },
     PA = () => {
