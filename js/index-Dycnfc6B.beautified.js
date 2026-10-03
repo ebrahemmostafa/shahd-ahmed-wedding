@@ -15514,179 +15514,6 @@ Error generating stack: ` + o.message + `
         e.UseFetcher = "useFetcher", e.UseFetchers = "useFetchers", e.UseScrollRestoration = "useScrollRestoration"
     })(rm || (rm = {}));
     const LT = {
-            fr: {
-                hero: {
-                    gettingMarried: "Nous nous marions",
-                    date: "22 Novembre 2026",
-                    confirmAttendance: "Confirmer sa présence"
-                },
-                story: {
-                    subtitle: "Notre Parcours",
-                    title: "Notre Histoire",
-                    milestones: [{
-                        year: "2020",
-                        title: "Notre Rencontre",
-                        description: "Nos chemins se sont croisés de la manière la plus inattendue. Ce qui a commencé comme une rencontre fortuite est devenu le début de notre belle histoire."
-                    }, {
-                        year: "2021",
-                        title: "Première Aventure",
-                        description: "Nous avons découvert notre amour commun pour l'exploration et l'aventure. Des conversations nocturnes aux voyages spontanés, chaque moment nous a rapprochés."
-                    }, {
-                        year: "2023",
-                        title: "Avancer Ensemble",
-                        description: "Nous savions que c'était pour toujours. Construire notre vie ensemble, soutenir les rêves de l'autre, et devenir plus forts chaque jour."
-                    }, {
-                        year: "2025",
-                        title: "La Demande",
-                        description: "Le cœur rempli d'amour et de rêves pour notre avenir, la question a été posée et répondue avec des larmes de joie."
-                    }],
-                    photo: "Photo"
-                },
-                program: {
-                    title: "Programme du jour",
-                    subtitle: "Ce que nous avons préparé pour vous",
-                    events: [{
-                        time: "16:30",
-                        title: "Arrivée des invités",
-                        description: "Accueil et bienvenue"
-                    }, {
-                        time: "17:00",
-                        title: "Cérémonie",
-                        description: "Mariage civil"
-                    }, {
-                        time: "18:00",
-                        title: "Cocktail",
-                        description: "Apéritifs et boissons"
-                    }, {
-                        time: "20:00",
-                        title: "Dîner",
-                        description: "Banquet de mariage"
-                    }, {
-                        time: "22:30",
-                        title: "Première danse",
-                        description: "La danse des mariés"
-                    }, {
-                        time: "23:00",
-                        title: "Fête",
-                        description: "On danse !"
-                    }, {
-                        time: "02:30",
-                        title: "Fin",
-                        description: "Au revoir"
-                    }]
-                },
-                gifts: {
-                    title: "Cadeaux",
-                    description: "Votre présence est le plus important pour nous.",
-                    description2: "Si vous souhaitez nous faire un cadeau, vous pouvez le faire de la manière qui vous convient le mieux.",
-                    contribution: "Contribution",
-                    cashOption: "Si vous préférez, le cadeau peut être en espèces.",
-                    transferOption: "Si cela vous convient mieux, vous pouvez également effectuer un virement :",
-                    showIban: "Afficher IBAN",
-                    iban: "IBAN"
-                },
-                details: {
-                    subtitle: "Rejoignez-nous",
-                    title: "Détails de l'événement",
-                    description: "Nous avons hâte de célébrer ce jour spécial avec vous. Voici tout ce que vous devez savoir.",
-                    ceremony: "Cérémonie de Mariage",
-                    ceremonyDesc: "Rejoignez-nous pour échanger nos vœux dans une cérémonie intime entourée de nos proches.",
-                    openMaps: "Ouvrir dans Maps",
-                    addCalendar: "Ajouter au Calendrier",
-                    dressCode: "Code Vestimentaire",
-                    dressCodeType: "Formel / Black Tie Optionnel",
-                    dressCodeDesc: "Nous vous prions de vous habiller élégamment pour notre célébration."
-                },
-                rsvp: {
-                    subtitle: "Soyez notre invité",
-                    title: "RSVP",
-                    deadline: "Merci de nous confirmer votre présence avant le 22 Octobre 2026",
-                    thankYouTitle: "Merci d'avoir confirmé votre présence",
-                    thankYouDesc1: "Nous sommes très heureux de savoir que vous nous accompagnerez en ce jour si spécial.",
-                    thankYouDesc2: "Merci de faire partie de notre histoire.",
-                    thankYouVenue: "Nous vous attendons le 22 novembre à la Mairie du 19ème, Paris.",
-                    thankYouSignature: "Shahd & Ahmed",
-                    addCalendar: "Ajouter au calendrier",
-                    cantAttendNote: "Si pour une raison quelconque vous ne pouvez pas assister, nous vous serions reconnaissants de nous prévenir à l'avance. Vous pouvez nous contacter par WhatsApp.",
-                    declineTitle: "Vous nous manquerez",
-                    declineDesc1: "Merci de nous avoir informés. Nous comprenons que vous ne puissiez pas être présent(e).",
-                    declineDesc2: "Nous vous gardons dans nos pensées et espérons vous revoir très bientôt.",
-                    submitAnother: "Soumettre une autre réponse",
-                    fullName: "Nom complet *",
-                    fullNamePlaceholder: "Votre nom complet",
-                    email: "Adresse email *",
-                    emailPlaceholder: "votre@email.com",
-                    attending: "Serez-vous présent(e) ? *",
-                    accept: "J'accepte avec joie",
-                    decline: "Je décline avec regret",
-                    primaryMealLabel: "Votre choix de repas *",
-                    primaryDietaryLabel: "Vos allergies / restrictions (optionnel)",
-                    primaryDietaryPlaceholder: "Ex : sans gluten, allergie aux fruits à coque...",
-                    meals: {
-                        meat: "Viande",
-                        fish: "Poisson",
-                        vegetarian: "Végétarien",
-                        selectPlaceholder: "Choisir un plat"
-                    },
-                    companions: {
-                        title: "Accompagnants",
-                        description: "Ajoutez les personnes qui vous accompagnent et indiquez leurs allergies éventuelles.",
-                        adult: "Adulte",
-                        child: "Enfant",
-                        adultsCount: "adulte(s)",
-                        childrenCount: "enfant(s)",
-                        addAdult: "Ajouter un adulte",
-                        addChild: "Ajouter un enfant",
-                        fullNameLabel: "Nom complet *",
-                        fullNamePlaceholder: "Nom et prénom",
-                        allergiesLabel: "Allergies / restrictions (optionnel)",
-                        allergiesPlaceholder: "Ex : sans lactose, allergie aux arachides...",
-                        mealLabel: "Choix de repas *",
-                        remove: "Retirer",
-                        maxReached: "Maximum 10 accompagnants."
-                    },
-                    message: "Message pour les mariés",
-                    messagePlaceholder: "Partagez vos vœux...",
-                    sending: "Envoi...",
-                    send: "Envoyer RSVP"
-                },
-                travel: {
-                    subtitle: "Planifiez votre visite",
-                    title: "Voyage & Hébergement",
-                    description: "Nous voulons rendre votre visite aussi confortable que possible. Voici quelques recommandations.",
-                    whereToStay: "Où séjourner",
-                    gettingThere: "Comment y aller",
-                    byAir: "Par avion",
-                    byAirDesc: "L'aéroport le plus proche est à environ 30 minutes du lieu. Nous vous recommandons de réserver vos vols à l'avance.",
-                    byCar: "En voiture",
-                    byCarDesc: "Un parking gratuit sera disponible sur place. Les coordonnées GPS seront partagées à l'approche de la date.",
-                    thingsToDo: "Choses à faire",
-                    thingsToDoDesc: "Si vous prolongez votre séjour, voici quelques attractions locales que nous aimons :",
-                    attractions: ["Vieille Ville historique", "Belles plages", "Marchés locaux", "Restaurants gastronomiques"],
-                    questions: "Questions ?",
-                    questionsDesc: "N'hésitez pas à nous contacter si vous avez besoin d'aide pour organiser votre voyage.",
-                    hotels: [{
-                        name: "Grand Hôtel",
-                        rating: "5 Étoiles",
-                        distance: "5 min du lieu",
-                        note: "Tarif spécial pour les invités du mariage"
-                    }, {
-                        name: "Boutique Inn",
-                        rating: "4 Étoiles",
-                        distance: "10 min du lieu",
-                        note: "Charmant et intime"
-                    }, {
-                        name: "Hôtel Centre-Ville",
-                        rating: "4 Étoiles",
-                        distance: "15 min du lieu",
-                        note: "Idéal pour explorer la ville"
-                    }]
-                },
-                footer: {
-                    madeWith: "Fait avec",
-                    forOurDay: "pour notre jour spécial"
-                }
-            },
             en: {
                 hero: {
                     gettingMarried: "We're Getting Married",
@@ -15865,14 +15692,8 @@ Error generating stack: ` + o.message + `
         DT = ({
             children: e
         }) => {
-            const [t, r] = w.useState(() => {
-                if (typeof window < "u") {
-                    const s = localStorage.getItem("wedding-language");
-                    if (s === "fr" || s === "en") return s
-                }
-                return "en"
-            }), n = s => {
-                r(s), localStorage.setItem("wedding-language", s)
+            const [t, r] = w.useState("en"), n = s => {
+                r(s)
             };
             return g.jsx(q0.Provider, {
                 value: {
@@ -27418,23 +27239,6 @@ END:VCALENDAR`,
             })
         })
     },
-    kA = () => {
-        const {
-            language: e,
-            setLanguage: t
-        } = Mr();
-        return g.jsxs("button", {
-            onClick: () => t(e === "fr" ? "en" : "fr"),
-            className: "fixed top-6 right-6 z-50 flex items-center gap-2 px-3 py-2 rounded-full border border-muted-foreground/30 bg-background/80 backdrop-blur-sm text-muted-foreground hover:text-foreground hover:border-foreground/50 transition-all duration-300",
-            "aria-label": "Switch language",
-            children: [g.jsx(lS, {
-                size: 16
-            }), g.jsx("span", {
-                className: "text-xs font-medium uppercase tracking-wider",
-                children: e === "fr" ? "EN" : "FR"
-            })]
-        })
-    },
     CA = ({
         onComplete: e
     }) => {
@@ -27542,7 +27346,7 @@ END:VCALENDAR`,
             }), r && g.jsx(TA, {
                 onContentReady: c,
                 onFadeComplete: u
-            }), g.jsx(kA, {}), g.jsx($T, {}), g.jsx(UT, {}), g.jsx(BT, {}), g.jsx(VT, {}), g.jsx(HT, {}), g.jsx(_A, {
+            }), g.jsx($T, {}), g.jsx(UT, {}), g.jsx(BT, {}), g.jsx(VT, {}), g.jsx(HT, {}), g.jsx(_A, {
                 submitted: s,
                 attendance: i,
                 onSubmitted: l
