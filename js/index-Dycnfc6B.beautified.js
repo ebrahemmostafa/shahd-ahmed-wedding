@@ -15526,7 +15526,7 @@ Error generating stack: ` + o.message + `
                     dateLabel: "Date",
                     date: "Friday, 23 October 2026",
                     timeLabel: "Time",
-                    time: "5:00 PM",
+                    time: "5:30 PM",
                     locationLabel: "Location",
                     location: "The Grove, El Sherouk",
                     mapUrl: "https://maps.app.goo.gl/apBpcmYAHKW3Y1vD6",
@@ -15906,7 +15906,7 @@ Error generating stack: ` + o.message + `
             })
         },
         WeddingCountdown = () => {
-            const target = new Date("2026-10-23T17:00:00+03:00").getTime(),
+            const target = new Date("2026-10-23T17:30:00+03:00").getTime(),
                 calc = () => Math.max(0, target - Date.now()),
                 [e, t] = w.useState(calc);
             w.useEffect(() => {
